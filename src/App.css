@@ -157,6 +157,12 @@ body{
   backdrop-filter: blur(10px);
 }
 
+.about-card p{
+  text-align: justify;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
 /* SKILLS */
 .skills-container{
   display: flex;
@@ -212,6 +218,7 @@ body{
 
 .project-buttons{
   display: flex;
+  justify-content: space-around;
   gap: 15px;
   flex-wrap: wrap;
 }

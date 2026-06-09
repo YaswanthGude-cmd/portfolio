@@ -15,7 +15,7 @@ function Resume() {
             </p>
             <div className="resume-buttons">
             <a
-                href="/resume.pdf"
+                href="/Yaswanth_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn"
@@ -23,7 +23,7 @@ function Resume() {
                 View Resume
             </a>
             <a
-                href="/resume.pdf"
+                href="/Yaswanth_Resume.pdf"
                 download
                 className="btn btn-outline"
             >

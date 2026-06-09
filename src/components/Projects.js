@@ -21,13 +21,15 @@ const projects = [
     title: 'Real-Time Chat Application',
     desc: 'Socket.IO based chat application supporting live messaging with multiple users and instant updates.',
     image:chatImg,
-    video : chatvideo
+    video : chatvideo,
+    github : "https://github.com/YaswanthGude-cmd/chat-app-socketio"
   },
   {
     title: 'News Aggregator App',
     desc: 'React-based news app that fetches and displays news from different categories like sports, technology, business, and entertainment using external APIs.',
     image:newsImg,
-    video:newsvideo
+    video:newsvideo,
+    github:"https://github.com/YaswanthGude-cmd/news-monkey"
   }
 ]
   return (
@@ -54,9 +56,18 @@ const projects = [
                     Watch Demo
                     </button>
 
-                    <button className="btn btn-outline">
-                    GitHub
-                    </button>
+                    {project.github ? (
+                      <button
+                        className="btn btn-outline"
+                        onClick={() => window.open(project.github, "_blank")}
+                      >
+                        GitHub
+                      </button>
+                    ) : (
+                      <button className="btn btn-outline" disabled>
+                        Private Repo
+                      </button>
+                    )}
                 </div>
 
                 </div>
